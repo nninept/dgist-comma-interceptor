@@ -1,4 +1,4 @@
-const socketClient = io("http://localhost:5000"); 
+const socketClient = io("http://localhost"); 
 socketClient.on("connect", () => { console.log("connection server"); });
 
 
