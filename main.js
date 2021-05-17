@@ -18,7 +18,7 @@ app.use(cors())
 
 
 app.get('/', (req, res, next) => res.sendFile(__dirname + '/statics/html/index.html'))
-app.get('/get-curv',(req, res, next)=> res.send(JSON.stringify({curv})))
+app.get('/get-curv',(req, res, next)=> res.json({curv}))
 
 
 io.on("connection", (socket) => {
